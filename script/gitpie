@@ -1,0 +1,4 @@
+#!/bin/zsh
+source ~/work_zone/uploadgit/env/bin/activate
+python ~/work_zone/uploadgit/main.py
+

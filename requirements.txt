@@ -1,0 +1,6 @@
+PyGithub
+pyfiglet
+pyperclip
+re
+InquirerPy
+termcolor
