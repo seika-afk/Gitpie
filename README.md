@@ -1,4 +1,4 @@
-# 🧠 GitPie – Instantly Push Any Folder to GitHub
+# 🧠 GitPie – Instantly Create Repo or Push Any Folder to GitHub
 
 GitPie is a simple Python tool that allows you to instantly turn any folder into a GitHub repo and push code with minimal input.
 
