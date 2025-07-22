@@ -48,7 +48,7 @@ class git_user:
         description_=input("> Enter Description : \n >")
 #inquirer here
         setPrivate=self.doinquire()
-        repo= self.user.create_repo(f"code-{repo_name}",description=description_,private=setPrivate)
+        repo= self.user.create_repo(f"{repo_name}",description=description_,private=setPrivate)
         print("---")
         print(f"Repositery created : {repo_name}")
         self.copy_it(repo.ssh_url)
