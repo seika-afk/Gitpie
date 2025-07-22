@@ -1,5 +1,6 @@
 import subprocess
 def gitpush (url):
+    subprocess.run(["git","init"])
     subprocess.run(["git","add","."])
     print("")
     print("> added everything")
