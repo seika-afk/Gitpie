@@ -1,31 +1,29 @@
-# 🧠 GitPie – Instantly Create Repo or Push Any Folder to GitHub
+# GitPie
 
-GitPie is a simple Python tool that allows you to instantly turn any folder into a GitHub repo and push code with minimal input.
+GitPie is a small Python CLI that lets you create a GitHub repository and push any local folder to it with minimal setup.
 
----
+## Setup
 
-## 🚀 To Run (One-Time Setup)
-
-1. **Clone the repository and navigate into it:**
+Clone the repo:
 
 ```bash
 git clone https://github.com/yourusername/GitPie.git
 cd GitPie
 ```
 
-2. **Install the required Python packages:**
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Get your GitHub Personal Access Token:**
+Create a GitHub Personal Access Token with the **repo** scope:
 
-Create one from here:  
-👉 https://github.com/settings/tokens (enable `repo` scope)
-- Put it into main.py
+https://github.com/settings/tokens
 
-4. **Run the script:**
+Add the token to `main.py`.
+
+Run:
 
 ```bash
 python main.py
@@ -33,19 +31,11 @@ python main.py
 
 ---
 
-## 🌐 To Use GitPie from Anywhere (Global Command)
+## Optional: Use it as a global command
 
-Once set up, you can run `gitpie` from any directory in your terminal.
+### Linux / macOS
 
-### 🐧 Linux / macOS (Zsh, Bash)
-
-1. **Create a launcher script:**
-
-```bash
-vim ~/GitPie/gitpie
-```
-
-Paste:
+Create a launcher script:
 
 ```bash
 #!/bin/bash
@@ -53,36 +43,29 @@ source ~/GitPie/env/bin/activate
 python ~/GitPie/main.py
 ```
 
-2. **Make the script executable:**
+Save it as `gitpie`, make it executable:
 
 ```bash
-chmod +x ~/GitPie/gitpie
+chmod +x gitpie
 ```
 
-3. **Add GitPie to your global PATH:**
+Move it somewhere in your `PATH` (or add its directory to your `PATH`):
 
 ```bash
-echo 'export PATH="$HOME/GitPie:$PATH"' >> ~/.zshrc
-source ~/.zshrc
+sudo mv gitpie /usr/local/bin/
 ```
 
-Now you can just type:
+Now you can run:
 
 ```bash
 gitpie
 ```
 
-...from anywhere! 🎉
+from anywhere.
 
----
+### Windows
 
-### 🪟 Windows
-
-1. Open Command Prompt or PowerShell as Administrator
-
-2. Add your GitPie folder path to the system `PATH` variable
-
-3. Create a `.bat` file (e.g., `gitpie.bat`) with this content:
+Create a `gitpie.bat` file:
 
 ```bat
 @echo off
@@ -90,12 +73,10 @@ call C:\path\to\GitPie\env\Scripts\activate
 python C:\path\to\GitPie\main.py
 ```
 
-Place this `.bat` file inside a folder that’s already in your system PATH or add it manually.
+Place it in a directory that's included in your system `PATH`.
 
-Now you can run `gitpie` from any terminal window.
-
-4. Or just use Chat GPT. 
 ---
 
-## Issues:
-- If any issue ,put them in Issues section.
+## Issues
+
+If you run into a bug or have a feature request, open an issue.
